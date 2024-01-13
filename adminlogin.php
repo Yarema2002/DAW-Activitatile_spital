@@ -1,26 +1,93 @@
+<?php
+include("include/connection.php");
+
+if(isset($_POST['login'])) {
+
+    $username = $_POST['uname'];
+    $password = $_POST['pass'];
+
+    $error = array(); 
+
+    if(empty($username)) {
+        $error['admin'] = "Enter Username";
+    } else if(empty($password)) {
+        $error['admin'] = "Enter Password";
+    }
+
+    if(count($error) == 0) {
+        $query = "SELECT *FROM admin WHERE username='$username' AND password='$
+        password'";
+
+        $result = mysqli_query($connect,$query);
+
+        if($result) {
+            echo "<script>alert('You have Login As an Admin')</script>";
+
+            $_SESSION['admin'] = $username;
+
+            //header("Location:")
+        } else {
+            echo "<script>alert('Invalid Username or Password')</script>";
+        }
+    }
+
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title> 
-    <link rel ="stylesheet" type="text/css"
-     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.slim.js" 
-     integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel ="stylesheet" type="text/css"
-     href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
 
-</head>     
-<body>
-    <nav class="navbar navbar-expand-lg navbar-info bg-info">
-        <h5 class="text-white">Hospital Management System</h5>
-        <div class="mr-auto"></div>
+    <title>Admin Login Page</title>
+</head>
+<body style="background-image: url(img/back.jpg);background-repeat: no-repeat;
+background-size: cover;">
+    <?php
+        include("include/header.php");
+    ?>
+    <div style="margin-top: 20px;"></div>
+    <div class="container">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <img src="img/admin.jpg" class="col-md-12">
+                    <form method="post" class="my-2">
 
-        <ul class="navbar-nav">
-            <li class="nav-item"><a href="" class="nav-link">Admin</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Doctor</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Pacient</a></li>
-        </ul>
-    </nav>
+                        <div class="alert alert-danger">
+                            <?php
+
+                                if(isset($error['admin'])) {
+                                    
+                                    $show = $error['admin'];
+
+                                } else {
+                                    $show ="";
+                                }
+                                
+                                echo $show;
+                            ?>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" name="uname" class="form-control"
+                            autocomplete="off" placeholder="Enter Username">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" name="pass" class="form-control">
+                        </div>
+
+                        <input type="submit" name="login" class="btn btn-success"
+                        value="Login">
+                    </form>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
