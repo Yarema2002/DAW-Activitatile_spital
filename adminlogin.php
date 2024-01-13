@@ -20,8 +20,8 @@ if(isset($_POST['login'])) {
         password'";
 
         $result = mysqli_query($connect,$query);
-
-        if(mysqli_num_rows($result) == 1) {
+            ////de corectat
+        if($result) {
             echo "<script>alert('You have Login As an Admin')</script>";
 
             $_SESSION['admin'] = $username;
@@ -54,16 +54,18 @@ background-size: cover;">
         <div class="col-md-12">
             <div class="row">
                 <div class="col-md-3"></div>
-                <div class="col-md-6">
+                <div class="col-md-6 jumbotron">
                     <img src="img/admin.jpg" class="col-md-12">
                     <form method="post" class="my-2">
 
-                        <div class="alert alert-danger">
+                        <div>
                             <?php
 
                                 if(isset($error['admin'])) {
                                     
-                                    $show = $error['admin'];
+                                    $sh = $error['admin'];
+                                    
+                                    $show = "<h4 class='alert alert-danger'>$sh</h4>";
 
                                 } else {
                                     $show ="";
