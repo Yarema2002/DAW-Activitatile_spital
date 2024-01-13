@@ -1,4 +1,5 @@
 <?php
+session_start();
 include("include/connection.php");
 
 if(isset($_POST['login'])) {
@@ -15,17 +16,18 @@ if(isset($_POST['login'])) {
     }
 
     if(count($error) == 0) {
-        $query = "SELECT *FROM admin WHERE username='$username' AND password='$
+        $query = "SELECT * FROM admin WHERE username='$username' AND password='$
         password'";
 
         $result = mysqli_query($connect,$query);
 
-        if($result) {
+        if(mysqli_num_rows($result) == 1) {
             echo "<script>alert('You have Login As an Admin')</script>";
 
             $_SESSION['admin'] = $username;
 
-            //header("Location:")
+            header("Location:admin/index.php");
+            exit();
         } else {
             echo "<script>alert('Invalid Username or Password')</script>";
         }
