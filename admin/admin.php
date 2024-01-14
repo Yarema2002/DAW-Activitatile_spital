@@ -54,7 +54,7 @@ include("../include/header.php");
                                     while($row = mysqli_fetch_array($res)) {
                                         $id = $row['id'];
                                         $username = $row['username'];
-                                        //de corectat
+                                        //de corectat nu lucreaza remove btn
                                         $output .="
                                             <tr>
                                         <td>$id</td>
