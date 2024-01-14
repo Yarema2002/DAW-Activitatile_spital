@@ -58,7 +58,7 @@ background-size: cover;">
                     <img src="img/admin.jpg" class="col-md-12">
                     <form method="post" class="my-2">
 
-                        <div>
+                        <div class="alert alert-danger">
                             <?php
 
                                 if(isset($error['admin'])) {
