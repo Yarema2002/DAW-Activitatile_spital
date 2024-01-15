@@ -1,51 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Document</title> 
-    <link rel ="stylesheet" type="text/css"
-     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.slim.js" 
-     integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel ="stylesheet" type="text/css"
-     href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" 
-    integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<?php error_reporting(0);?>
+<header class="navbar navbar-default navbar-static-top">
+					<!-- start: NAVBAR HEADER -->
+					<div class="navbar-header">
+						<a href="#" class="sidebar-mobile-toggler pull-left hidden-md hidden-lg" class="btn btn-navbar sidebar-toggle" data-toggle-class="app-slide-off" data-toggle-target="#app" data-toggle-click-outside="#sidebar">
+							<i class="ti-align-justify"></i>
+						</a>
+						<a class="navbar-brand" href="#">
+							<h2 style="padding-top:20% ">HMS</h2>
+						</a>
+						<a href="#" class="sidebar-toggler pull-right visible-md visible-lg" data-toggle-class="app-sidebar-closed" data-toggle-target="#app">
+							<i class="ti-align-justify"></i>
+						</a>
+						<a class="pull-right menu-toggler visible-xs-block" id="menu-toggler" data-toggle="collapse" href=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<i class="ti-view-grid"></i>
+						</a>
+					</div>
+					<!-- end: NAVBAR HEADER -->
+					<!-- start: NAVBAR COLLAPSE -->
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-right">
+							<!-- start: MESSAGES DROPDOWN -->
+								<li  style="padding-top:2% ">
+								<h2>Hospital Management System</h2>
+							</li>
+						
+						
+							<li class="dropdown current-user">
+								<a href class="dropdown-toggle" data-toggle="dropdown">
+									<img src="assets/images/images.jpg"> <span class="username">
 
-</head>     
-<body>
-    <nav class="navbar navbar-expand-lg navbar-info bg-info">
-        <h5 class="text-white">Hospital Management System</h5>
 
-        <div class="mr-auto"></div>
 
-        <ul class="navbar-nav">
-            <?php
-                if(isset($_SESSION['admin'])) {
-                   $user = $_SESSION['admin'];
-                    echo '
-            <li class="nav-item"><a href="#" class="nav-link text-white">'.$user.'</a>
-            </li>
-            <li class="nav-item"><a href="logout.php" class="nav-link text-white">logout</a>
-            </li>
-                    ';
-                } else {
-                    echo '
-                    <li class="nav-item"><a href="adminlogin.php" class="nav-link text-white">Admin</a>
-            </li>
-            <li class="nav-item"><a href="#" class="nav-link text-white">Doctor</a>
-            </li>
-            <li class="nav-item"><a href="#" class="nav-link text-white">Pacient</a>
-            </li>
-                    ';
-                }
-            
-            ?>
-        </ul>
-    </nav>
-</body>
-</html>
+									<?php $query=mysqli_query($con,"select fullName from users where id='".$_SESSION['id']."'");
+while($row=mysqli_fetch_array($query))
+{
+	echo $row['fullName'];
+}
+									?> <i class="ti-angle-down"></i></i></span>
+								</a>
+								<ul class="dropdown-menu dropdown-dark">
+									<li>
+										<a href="edit-profile.php">
+											My Profile
+										</a>
+									</li>
+								
+									<li>
+										<a href="change-password.php">
+											Change Password
+										</a>
+									</li>
+									<li>
+										<a href="logout.php">
+											Log Out
+										</a>
+									</li>
+								</ul>
+							</li>
+							<!-- end: USER OPTIONS DROPDOWN -->
+						</ul>
+						<!-- start: MENU TOGGLER FOR MOBILE DEVICES -->
+						<div class="close-handle visible-xs-block menu-toggler" data-toggle="collapse" href=".navbar-collapse">
+							<div class="arrow-left"></div>
+							<div class="arrow-right"></div>
+						</div>
+						<!-- end: MENU TOGGLER FOR MOBILE DEVICES -->
+					</div>
+				
+					
+					<!-- end: NAVBAR COLLAPSE -->
+				</header>
