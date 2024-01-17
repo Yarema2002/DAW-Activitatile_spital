@@ -8,11 +8,10 @@ Sistem de management al unui spital. Sistemul utilizeaza MySQL, Php si Bootstrap
 
 ## Limbaje si technologii folosite
 1. HTML5/CSS3
-2. JavaScript
-3. Bootstrap (An HTML, CSS, and JS library)
-4. XAMPP (web server de Apache Friends)
-5. Php
-6. MySQL (RDBMS ce utilizeaza SQL)
+2. Bootstrap (An HTML, CSS, and JS library)
+3. XAMPP (web server de Apache Friends)
+4. Php
+5. MySQL (RDBMS ce utilizeaza SQL)
 
 ## Pasi pentru a rula proiectul pe masina locala
 1. Downloadeaza si instaleaza XAMPP pe masina ta
