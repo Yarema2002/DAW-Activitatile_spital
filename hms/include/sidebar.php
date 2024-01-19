@@ -5,7 +5,7 @@
 						
 						<!-- start: MAIN NAVIGATION MENU -->
 						<div class="navbar-title">
-							<span>Main Navigation</span>
+							<span>Main Navigare</span>
 						</div>
 						<ul class="main-navigation-menu">
 							<li>
@@ -27,7 +27,7 @@
 											<i class="ti-pencil-alt"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> rezervari </span>
+											<span class="title"> Rezervari </span>
 										</div>
 									</div>
 								</a>
