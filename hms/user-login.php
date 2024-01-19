@@ -97,7 +97,7 @@ header("location:user-login.php");
 					</form>
 
 					<div class="copyright">
-						</span><span class="text-bold text-uppercase"> Hospital Management System</span>.
+						</span><span class="text-bold text-uppercase"> Activitațile unui spital</span>.
 					</div>
 			
 				</div>
