@@ -45,26 +45,7 @@ Pagina CONTACT permite altor useri sa trasnmita feedback sau cerinte in sistemul
 2. Modulul Doctor-log/pass = savaolga@test.com/Test@123
 3. Modulul Admin-log/pass = admin/admin12345
 
-### Modulul Pacient:
-
-  &nbsp; &nbsp; &nbsp; Acest modul permite pacientilor sa isi creeze cont, sa se programeze pentru o consultatie si sa isi vizualizeze istoricul consultatiilor:
-
-**1. Programare consulatie:**
-
-  &nbsp; &nbsp; &nbsp; Programarea necesita selectarea unui doctor, unei specialitati, unei date din calendar si unei ore.
-
-**2. Vizualizare istoric consultatii:**
-
-  &nbsp; &nbsp; &nbsp; Poate vizualiza istoricul ce contine: Nume doctor, taxa consultatie, data si ora programare.
-
-### Modulul Doctor:
-
-  &nbsp; &nbsp; &nbsp; Doctorii se pot loga in conturile lor. Crearea unui cont de doctor se face numai de catre admin.
-
-
-&nbsp; &nbsp; &nbsp; O data ce are creat un cont, doctorul se poate loga cu contul sau, poate vedea programarile si poate cauta dupa un pacient in istoricul programarilor sale,de asemenea poate si adauga un pacient nout
-
-### Modulul Admin:
+   ### Modulul Admin:
    
    &nbsp; &nbsp; &nbsp; Adminul poate vizualiza lista tuturor pacientilor, a tuturor doctorilor si programarilor, feedback primit de pe pagina de Contact. De asemenea, adminul poate adauga un doctor sau sterge un doctor.
   &nbsp; &nbsp; &nbsp; Credentiale cont admin:
@@ -91,6 +72,26 @@ Moculul Admin permite efectuarea umatoarelor operatiuni:
 **5. Vizualizare feedback useri:**
 
   &nbsp; &nbsp; &nbsp; Adminul poate vizualiza feedback-ul primit in urma serviciilor prestate de catre spital. Informatiile sunt grupate dupa Nume user, Email ID, Numar contact si mesaj.
+
+
+### Modulul Pacient:
+
+  &nbsp; &nbsp; &nbsp; Acest modul permite pacientilor sa isi creeze cont, sa se programeze pentru o consultatie si sa isi vizualizeze istoricul consultatiilor://neterminat
+
+**1. Programare consulatie:**
+
+  &nbsp; &nbsp; &nbsp; Programarea necesita selectarea unui doctor, unei specialitati, unei date din calendar si unei ore.
+
+**2. Vizualizare istoric consultatii:**
+
+  &nbsp; &nbsp; &nbsp; Poate vizualiza istoricul ce contine: Nume doctor, taxa consultatie, data si ora programare.
+
+### Modulul Doctor:
+
+  &nbsp; &nbsp; &nbsp; Doctorii se pot loga in conturile lor. Crearea unui cont de doctor se face numai de catre admin.
+
+
+&nbsp; &nbsp; &nbsp; O data ce are creat un cont, doctorul se poate loga cu contul sau, poate vedea programarile si poate cauta dupa un pacient in istoricul programarilor sale,de asemenea poate si adauga un pacient nout
 
 
 ### 1. Anularea unei programari
