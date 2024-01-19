@@ -78,7 +78,7 @@ header("location:index.php");
 									<i class="fa fa-lock"></i>
 									 </span>
 									 <a href="forgot-password.php">
-									Forgot Password ?
+									Ai uitat pass?
 								</a>
 							</div>
 							<div class="form-actions">
@@ -93,7 +93,7 @@ header("location:index.php");
 					</form>
 
 					<div class="copyright">
-					<span class="text-bold text-uppercase"> Hospital Management System</span>
+					<span class="text-bold text-uppercase"> Activitatile unui spital</span>
 					</div>
 			
 				</div>

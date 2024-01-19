@@ -105,7 +105,7 @@ Patient Name
 </div>
 <div class="form-group">
 <label for="fess">
- Patient Contact no
+ Patient Tel
 </label>
 <input type="text" name="patcontact" class="form-control"  placeholder="Enter Patient Contact no" required="true" maxlength="10" pattern="[0-9]+">
 </div>
@@ -118,7 +118,7 @@ Patient Email
 </div>
 <div class="form-group">
 <label class="block">
-Gender
+Varsta
 </label>
 <div class="clip-radio radio-primary">
 <input type="radio" id="rg-female" name="gender" value="female" >

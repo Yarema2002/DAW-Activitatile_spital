@@ -15,7 +15,7 @@ mysqli_query($con,"update appointment set doctorStatus='0' where id ='".$_GET['i
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Doctor | Appointment History</title>
+		<title>Doctor | Istoria programarilor</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -46,14 +46,14 @@ mysqli_query($con,"update appointment set doctorStatus='0' where id ='".$_GET['i
 						<section id="page-title">
 							<div class="row">
 								<div class="col-sm-8">
-									<h1 class="mainTitle">Doctor  | Appointment History</h1>
+									<h1 class="mainTitle">Doctor  | Istoria programarilor</h1>
 																	</div>
 								<ol class="breadcrumb">
 									<li>
 										<span>Doctor </span>
 									</li>
 									<li class="active">
-										<span>Appointment History</span>
+										<span>Istoria programarilor</span>
 									</li>
 								</ol>
 							</div>
@@ -73,10 +73,10 @@ mysqli_query($con,"update appointment set doctorStatus='0' where id ='".$_GET['i
 											<tr>
 												<th class="center">#</th>
 												<th class="hidden-xs">Patient  Name</th>
-												<th>Specialization</th>
-												<th>Consultancy Fee</th>
-												<th>Appointment Date / Time </th>
-												<th>Appointment Creation Date  </th>
+												<th>Specializare</th>
+												<th>Taxa Consultare</th>
+												<th>Programare Date / Time </th>
+												<th>Programare Creation Date  </th>
 												<th>Current Status</th>
 												<th>Action</th>
 												

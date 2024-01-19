@@ -38,14 +38,14 @@ if(strlen($_SESSION['id']==0)) {
 <section id="page-title">
 <div class="row">
 <div class="col-sm-8">
-<h1 class="mainTitle">Doctor | Manage Patients</h1>
+<h1 class="mainTitle">Doctor | Gestioneaza pacienti</h1>
 </div>
 <ol class="breadcrumb">
 <li>
 <span>Doctor</span>
 </li>
 <li class="active">
-<span>Manage Patients</span>
+<span>Gestioneaza pacienti</span>
 </li>
 </ol>
 </div>
@@ -59,8 +59,8 @@ if(strlen($_SESSION['id']==0)) {
 <thead>
 <tr>
 <th class="center">#</th>
-<th>Patient Name</th>
-<th>Patient Contact Number</th>
+<th>Patient Nume</th>
+<th>Patient Tel</th>
 <th>Patient Gender </th>
 <th>Creation Date </th>
 <th>Updation Date </th>

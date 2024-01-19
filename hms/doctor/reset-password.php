@@ -41,7 +41,7 @@ function valid()
 {
  if(document.passwordreset.password.value!= document.passwordreset.password_again.value)
 {
-alert("Password and Confirm Password Field do not match  !!");
+alert("Password si confirma parola nu coincid  !!");
 document.passwordreset.password_again.focus();
 return false;
 }
@@ -60,10 +60,10 @@ return true;
 					<form class="form-login" name="passwordreset" method="post" onSubmit="return valid();">
 						<fieldset>
 							<legend>
-								Patient Reset Password
+								Patient reseteaza parola
 							</legend>
 							<p>
-								Please set your new password.<br />
+								Va rog introdu parola noua<br />
 								<span style="color:red;"><?php echo $_SESSION['errmsg']; ?><?php echo $_SESSION['errmsg']="";?></span>
 							</p>
 
@@ -84,11 +84,11 @@ return true;
 							<div class="form-actions">
 								
 								<button type="submit" class="btn btn-primary pull-right" name="change">
-									Change <i class="fa fa-arrow-circle-right"></i>
+									Schimba <i class="fa fa-arrow-circle-right"></i>
 								</button>
 							</div>
 							<div class="new-account">
-								Already have an account? 
+								Ai deja acc?
 								<a href="index.php">
 									Log-in
 								</a>
@@ -97,7 +97,7 @@ return true;
 					</form>
 
 					<div class="copyright">
-				<span class="text-bold text-uppercase"> Hospital Management System</span>
+				<span class="text-bold text-uppercase"> Activitatile unui spital</span>
 					</div>
 			
 				</div>

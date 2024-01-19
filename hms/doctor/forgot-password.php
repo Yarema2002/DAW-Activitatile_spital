@@ -54,7 +54,7 @@ echo "<script>window.location.href ='forgot-password.php'</script>";
 								Doctor Password Recovery
 							</legend>
 							<p>
-								Please enter your  Contact number and Email to recover your password.<br />
+								Te rog introdu telefonul si emailul pentru recuperare.<br />
 					
 							</p>
 
@@ -78,7 +78,7 @@ echo "<script>window.location.href ='forgot-password.php'</script>";
 								</button>
 							</div>
 							<div class="new-account">
-								Already have an account? 
+								Ai deja acc? 
 								<a href="index.php">
 									Log-in
 								</a>
@@ -87,7 +87,7 @@ echo "<script>window.location.href ='forgot-password.php'</script>";
 					</form>
 
 					<div class="copyright">
-					<span class="text-bold text-uppercase"> Hospital Management System</span>
+					<span class="text-bold text-uppercase"> Activitatile unui spital</span>
 					</div>
 			
 				</div>

@@ -24,7 +24,7 @@ echo "<script>alert('Doctor Details updated Successfully');</script>";
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Doctr | Edit Doctor Details</title>
+		<title>Doctr | Edit Doctor Detalii</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -54,14 +54,14 @@ echo "<script>alert('Doctor Details updated Successfully');</script>";
 						<section id="page-title">
 							<div class="row">
 								<div class="col-sm-8">
-									<h1 class="mainTitle">Doctor | Edit Doctor Details</h1>
+									<h1 class="mainTitle">Doctor | Edit Doctor Detalii</h1>
 																	</div>
 								<ol class="breadcrumb">
 									<li>
 										<span>Doctor</span>
 									</li>
 									<li class="active">
-										<span>Edit Doctor Details</span>
+										<span>Edit Doctor Detalii</span>
 									</li>
 								</ol>
 							</div>
@@ -94,7 +94,7 @@ while($data=mysqli_fetch_array($sql))
 													<form role="form" name="adddoc" method="post" onSubmit="return valid();">
 														<div class="form-group">
 															<label for="DoctorSpecialization">
-																Doctor Specialization
+																Doctor Specializare
 															</label>
 							<select name="Doctorspecialization" class="form-control" required="required">
 					<option value="<?php echo htmlentities($data['specilization']);?>">
@@ -127,14 +127,14 @@ while($row=mysqli_fetch_array($ret))
 														</div>
 <div class="form-group">
 															<label for="fess">
-																 Doctor Consultancy Fees
+																 Doctor Taxa consultare
 															</label>
 		<input type="text" name="docfees" class="form-control" required="required"  value="<?php echo htmlentities($data['docFees']);?>" >
 														</div>
 	
 <div class="form-group">
 									<label for="fess">
-																 Doctor Contact no
+																 Doctor Tel
 															</label>
 					<input type="text" name="doccontact" class="form-control" required="required"  value="<?php echo htmlentities($data['contactno']);?>">
 														</div>

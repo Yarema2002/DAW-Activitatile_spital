@@ -97,7 +97,7 @@ Patient Name
 </div>
 <div class="form-group">
 <label for="fess">
- Patient Contact no
+ Patient Tel
 </label>
 <input type="text" name="patcontact" class="form-control"  value="<?php  echo $row['PatientContno'];?>" required="true" maxlength="10" pattern="[0-9]+">
 </div>
@@ -128,13 +128,13 @@ Patient Address
 </div>
 <div class="form-group">
 <label for="fess">
- Patient Age
+ Patient Varsta
 </label>
 <input type="text" name="patage" class="form-control"  value="<?php  echo $row['PatientAge'];?>" required="true">
 </div>
 <div class="form-group">
 <label for="fess">
- Medical History
+ Istoria Medicala
 </label>
 <textarea type="text" name="medhis" class="form-control"  placeholder="Enter Patient Medical History(if any)" required="true"><?php  echo $row['PatientMedhis'];?></textarea>
 </div>	

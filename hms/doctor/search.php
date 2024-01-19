@@ -57,13 +57,13 @@ if(strlen($_SESSION['id']==0)) {
 
 <div class="form-group">
 <label for="doctorname">
-Search by Name/Mobile No.
+Search dupa Nume:
 </label>
 <input type="text" name="searchdata" id="searchdata" class="form-control" value="" required='true'>
 </div>
 
 <button type="submit" name="search" id="submit" class="btn btn-o btn-primary">
-Search
+Cauta
 </button>
 </form>	
 <?php
@@ -78,8 +78,8 @@ $sdata=$_POST['searchdata'];
 <thead>
 <tr>
 <th class="center">#</th>
-<th>Patient Name</th>
-<th>Patient Contact Number</th>
+<th>Patient Nume</th>
+<th>Patient Tel:</th>
 <th>Patient Gender </th>
 <th>Creation Date </th>
 <th>Updation Date </th>

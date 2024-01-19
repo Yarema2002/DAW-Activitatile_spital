@@ -33,7 +33,7 @@ if(isset($_POST['submit']))
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Doctor | Manage Patients</title>
+		<title>Doctor | Gestionați pacienții</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -61,14 +61,14 @@ if(isset($_POST['submit']))
 <section id="page-title">
 <div class="row">
 <div class="col-sm-8">
-<h1 class="mainTitle">Doctor | Manage Patients</h1>
+<h1 class="mainTitle">Doctor | Gestionați pacienții</h1>
 </div>
 <ol class="breadcrumb">
 <li>
 <span>Doctor</span>
 </li>
 <li class="active">
-<span>Manage Patients</span>
+<span>Gestionați pacienții</span>
 </li>
 </ol>
 </div>
@@ -76,7 +76,7 @@ if(isset($_POST['submit']))
 <div class="container-fluid container-fullw bg-white">
 <div class="row">
 <div class="col-md-12">
-<h5 class="over-title margin-bottom-15">Manage <span class="text-bold">Patients</span></h5>
+<h5 class="over-title margin-bottom-15">Gestionați <span class="text-bold">Patientii</span></h5>
 <?php
                                $vid=$_GET['viewid'];
                                $ret=mysqli_query($con,"select * from tblpatient where ID='$vid'");
@@ -86,16 +86,16 @@ while ($row=mysqli_fetch_array($ret)) {
 <table border="1" class="table table-bordered">
  <tr align="center">
 <td colspan="4" style="font-size:20px;color:blue">
- Patient Details</td></tr>
+ Patient detalii</td></tr>
 
     <tr>
-    <th scope>Patient Name</th>
+    <th scope>Pacient Nume</th>
     <td><?php  echo $row['PatientName'];?></td>
-    <th scope>Patient Email</th>
+    <th scope>Pacient Email</th>
     <td><?php  echo $row['PatientEmail'];?></td>
   </tr>
   <tr>
-    <th scope>Patient Mobile Number</th>
+    <th scope>Patient Tel</th>
     <td><?php  echo $row['PatientContno'];?></td>
     <th>Patient Address</th>
     <td><?php  echo $row['PatientAdd'];?></td>
@@ -103,12 +103,12 @@ while ($row=mysqli_fetch_array($ret)) {
     <tr>
     <th>Patient Gender</th>
     <td><?php  echo $row['PatientGender'];?></td>
-    <th>Patient Age</th>
+    <th>Patient Varsta</th>
     <td><?php  echo $row['PatientAge'];?></td>
   </tr>
   <tr>
     
-    <th>Patient Medical History(if any)</th>
+    <th>Patient Istoria Medicala</th>
     <td><?php  echo $row['PatientMedhis'];?></td>
      <th>Patient Reg Date</th>
     <td><?php  echo $row['CreationDate'];?></td>
@@ -125,15 +125,15 @@ $ret=mysqli_query($con,"select * from tblmedicalhistory  where PatientID='$vid'"
  ?>
 <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
   <tr align="center">
-   <th colspan="8" >Medical History</th> 
+   <th colspan="8" >Istoria Medicala</th> 
   </tr>
   <tr>
     <th>#</th>
-<th>Blood Pressure</th>
-<th>Weight</th>
-<th>Blood Sugar</th>
-<th>Body Temprature</th>
-<th>Medical Prescription</th>
+<th>Presiune</th>
+<th>KG</th>
+<th>Cant. zahar</th>
+<th>Temperatura</th>
+<th>Prescriptie Medicala</th>
 <th>Visit Date</th>
 </tr>
 <?php  
@@ -170,28 +170,28 @@ while ($row=mysqli_fetch_array($ret)) {
                                  <form method="post" name="submit">
 
       <tr>
-    <th>Blood Pressure :</th>
+    <th>Presiune :</th>
     <td>
     <input name="bp" placeholder="Blood Pressure" class="form-control wd-450" required="true"></td>
   </tr>                          
      <tr>
-    <th>Blood Sugar :</th>
+    <th>Cant. zahar :</th>
     <td>
     <input name="bs" placeholder="Blood Sugar" class="form-control wd-450" required="true"></td>
   </tr> 
   <tr>
-    <th>Weight :</th>
+    <th>KG :</th>
     <td>
     <input name="weight" placeholder="Weight" class="form-control wd-450" required="true"></td>
   </tr>
   <tr>
-    <th>Body Temprature :</th>
+    <th>Temperatura :</th>
     <td>
     <input name="temp" placeholder="Blood Sugar" class="form-control wd-450" required="true"></td>
   </tr>
                          
      <tr>
-    <th>Prescription :</th>
+    <th>Prescriptia :</th>
     <td>
     <textarea name="pres" placeholder="Medical Prescription" rows="12" cols="14" class="form-control wd-450" required="true"></textarea></td>
   </tr>  
