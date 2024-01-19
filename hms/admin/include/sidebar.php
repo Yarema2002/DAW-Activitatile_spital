@@ -5,7 +5,7 @@
 						
 						<!-- start: MAIN NAVIGATION MENU -->
 						<div class="navbar-title">
-							<span>Main Navigation</span>
+							<span>Navigare</span>
 						</div>
 						<ul class="main-navigation-menu">
 							<li>
@@ -15,7 +15,7 @@
 											<i class="ti-home"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Dashboard </span>
+											<span class="title"> Navigare </span>
 										</div>
 									</div>
 								</a>
@@ -27,14 +27,14 @@
 											<i class="ti-user"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Doctors </span><i class="icon-arrow"></i>
+											<span class="title"> Doctori </span><i class="icon-arrow"></i>
 										</div>
 									</div>
 								</a>
 								<ul class="sub-menu">
 									<li>
 										<a href="doctor-specilization.php">
-											<span class="title"> Doctor Specialization </span>
+											<span class="title"> Doctori Specializare </span>
 										</a>
 									</li>
 									<li>
@@ -43,8 +43,8 @@
 										</a>
 									</li>
 									<li>
-										<a href="Manage-doctors.php">
-											<span class="title"> Manage Doctors </span>
+										<a href="manage-doctors.php">
+											<span class="title"> Gestioneaza Doctori </span>
 										</a>
 									</li>
 									
@@ -66,7 +66,7 @@
 									
 									<li>
 										<a href="manage-users.php">
-											<span class="title"> Manage Users </span>
+											<span class="title"> Gestioneaza Useri </span>
 										</a>
 									</li>
 									
@@ -79,7 +79,7 @@
 											<i class="ti-user"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Patients </span><i class="icon-arrow"></i>
+											<span class="title"> Patienti </span><i class="icon-arrow"></i>
 										</div>
 									</div>
 								</a>
@@ -87,7 +87,7 @@
 									
 									<li>
 										<a href="manage-patient.php">
-											<span class="title"> Manage Patients </span>
+											<span class="title"> Gestioneaza Pacienti </span>
 										</a>
 									</li>
 									
@@ -101,7 +101,7 @@
 											<i class="ti-file"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Appointment History </span>
+											<span class="title"> Istoria numirilor </span>
 										</div>
 									</div>
 								</a>
@@ -116,7 +116,7 @@
 											<i class="ti-files"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Conatctus Queries </span><i class="icon-arrow"></i>
+											<span class="title"> Întrebări Contact </span><i class="icon-arrow"></i>
 										</div>
 									</div>
 								</a>
@@ -124,13 +124,13 @@
 									
 									<li>
 										<a href="unread-queries.php">
-											<span class="title"> Unread Query </span>
+											<span class="title"> Intrebari necitite </span>
 										</a>
 									</li>
 
 									<li>
 										<a href="read-query.php">
-											<span class="title"> Read Query </span>
+											<span class="title"> Intrebari citite </span>
 										</a>
 									</li>
 									
@@ -173,7 +173,7 @@
 											<i class="ti-files"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Reports </span><i class="icon-arrow"></i>
+											<span class="title"> Rapoarte </span><i class="icon-arrow"></i>
 										</div>
 									</div>
 								</a>
@@ -195,7 +195,7 @@
 											<i class="ti-file"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Pages </span><i class="icon-arrow"></i>
+											<span class="title"> Pagina principala </span><i class="icon-arrow"></i>
 										</div>
 									</div>
 								</a>
@@ -203,12 +203,12 @@
 									
 									<li>
 										<a href="about-us.php">
-											<span class="title">About Us </span>
+											<span class="title">Despre noi </span>
 										</a>
 									</li>
 																	<li>
 										<a href="contact.php">
-											<span class="title">Cotnact Us </span>
+											<span class="title">Contacteaza-ne </span>
 										</a>
 									</li>
 								</ul>
@@ -224,7 +224,7 @@
 											<i class="ti-search"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Patient Search </span>
+											<span class="title"> Cautare Pacient </span>
 										</div>
 									</div>
 								</a>
