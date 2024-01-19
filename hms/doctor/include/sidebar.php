@@ -5,7 +5,7 @@
 						
 						<!-- start: MAIN NAVIGATION MENU -->
 						<div class="navbar-title">
-							<span>Main Navigation</span>
+							<span>Main Navigare</span>
 						</div>
 						<ul class="main-navigation-menu">
 							<li>
@@ -41,7 +41,7 @@
 											<i class="ti-user"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Patienti </span><i class="icon-arrow"></i>
+											<span class="title"> Pacienti </span><i class="icon-arrow"></i>
 										</div>
 									</div>
 								</a>
@@ -49,12 +49,12 @@
 									
 									<li>
 										<a href="add-patient.php">
-											<span class="title"> Add Patient</span>
+											<span class="title"> Add Pacient</span>
 										</a>
 									</li>
 									<li>
 										<a href="manage-patient.php">
-											<span class="title"> Manage Patient </span>
+											<span class="title"> Gestioneaza Pacient </span>
 										</a>
 									</li>
 									
