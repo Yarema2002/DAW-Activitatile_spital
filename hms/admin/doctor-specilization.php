@@ -54,14 +54,14 @@ $_SESSION['msg']="data deleted !!";
 						<section id="page-title">
 							<div class="row">
 								<div class="col-sm-8">
-									<h1 class="mainTitle">Admin | adauga specializare</h1>
+									<h1 class="mainTitle">Admin | Adauga specializare</h1>
 																	</div>
 								<ol class="breadcrumb">
 									<li>
 										<span>Admin</span>
 									</li>
 									<li class="active">
-										<span>Addauga specializare</span>
+										<span>Adauga specializare</span>
 									</li>
 								</ol>
 							</div>
@@ -84,7 +84,7 @@ $_SESSION['msg']="data deleted !!";
 													<form role="form" name="dcotorspcl" method="post" >
 														<div class="form-group">
 															<label for="exampleInputEmail1">
-																Doctor Specialization
+																Doctor Specializare
 															</label>
 							<input type="text" name="doctorspecilization" class="form-control"  placeholder="Enter Doctor Specialization">
 														</div>
@@ -112,15 +112,15 @@ $_SESSION['msg']="data deleted !!";
 
 									<div class="row">
 								<div class="col-md-12">
-									<h5 class="over-title margin-bottom-15">Manage <span class="text-bold">Docter Specialization</span></h5>
+									<h5 class="over-title margin-bottom-15">Manage <span class="text-bold">Doctor specializare</span></h5>
 									
 									<table class="table table-hover" id="sample-table-1">
 										<thead>
 											<tr>
 												<th class="center">#</th>
-												<th>Specialization</th>
+												<th>Specializare</th>
 												<th class="hidden-xs">Creation Date</th>
-												<th>Updation Date</th>
+												<th>Update Date</th>
 												<th>Action</th>
 												
 											</tr>

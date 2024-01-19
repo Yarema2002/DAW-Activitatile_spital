@@ -66,10 +66,10 @@ if(strlen($_SESSION['id']==0)) {
 										<thead>
 											<tr>
 												<th class="center">#</th>
-												<th>Name</th>
+												<th>Nume</th>
 												<th class="hidden-xs">Email</th>
-												<th>Contact No. </th>
-												<th>Message </th>
+												<th>Contact Tel </th>
+												<th>Mesaj </th>
 												<th>Data</th>
 												<th>Action</th>
 												

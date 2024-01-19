@@ -79,7 +79,7 @@ $_SESSION['errmsg']="Invalid username or password";
 									Login <i class="fa fa-arrow-circle-right"></i>
 								</button>
 							</div>
-							<a href="../../index.php">Inapoi la Home page</a>
+							<a href="../../index.php">Inapoi la Acasa</a>
 							
 						</fieldset>
 					</form>

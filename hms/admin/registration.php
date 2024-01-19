@@ -51,7 +51,7 @@ if($query)
 					<form name="registration" id="registration"  method="post">
 						<fieldset>
 							<legend>
-								Sign Up
+								Inregistreaza-te
 							</legend>
 							<p>
 								Scrie Detaliile personale:

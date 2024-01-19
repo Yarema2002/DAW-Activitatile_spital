@@ -101,16 +101,16 @@ while ($row=mysqli_fetch_array($ret)) {
     <td><?php  echo $row['PatientAdd'];?></td>
   </tr>
     <tr>
-    <th>Patient Sex</th>
+    <th>Pacient Sex</th>
     <td><?php  echo $row['PatientGender'];?></td>
-    <th>Patient Varsta</th>
+    <th>Pacient Varsta</th>
     <td><?php  echo $row['PatientAge'];?></td>
   </tr>
   <tr>
     
-    <th>Patient Istoria medicala</th>
+    <th>Pacient Istoria medicala</th>
     <td><?php  echo $row['PatientMedhis'];?></td>
-     <th>Patient Reg Date</th>
+     <th>Pacient Reg Data</th>
     <td><?php  echo $row['CreationDate'];?></td>
   </tr>
  
@@ -134,7 +134,7 @@ $ret=mysqli_query($con,"select * from tblmedicalhistory  where PatientID='$vid'"
 <th>Sange</th>
 <th>Temperature</th>
 <th>Diagnoza</th>
-<th>Visit Date</th>
+<th>Visit Data</th>
 </tr>
 <?php  
 while ($row=mysqli_fetch_array($ret)) { 

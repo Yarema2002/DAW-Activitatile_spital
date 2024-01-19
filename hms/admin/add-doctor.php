@@ -118,7 +118,7 @@ error:function (){}
 																Doctor Specialization
 															</label>
 							<select name="Doctorspecialization" class="form-control" required="true">
-																<option value="">Select Specialization</option>
+																<option value="">Select Specializare</option>
 <?php $ret=mysqli_query($con,"select * from doctorspecilization");
 while($row=mysqli_fetch_array($ret))
 {
@@ -133,7 +133,7 @@ while($row=mysqli_fetch_array($ret))
 
 <div class="form-group">
 															<label for="doctorname">
-																 Doctor Name
+																 Doctor Nume
 															</label>
 					<input type="text" name="docname" class="form-control"  placeholder="Enter Doctor Name" required="true">
 														</div>
@@ -141,20 +141,20 @@ while($row=mysqli_fetch_array($ret))
 
 <div class="form-group">
 															<label for="address">
-																 Doctor Clinic Address
+																 Doctor Clinic Addresa
 															</label>
 					<textarea name="clinicaddress" class="form-control"  placeholder="Enter Doctor Clinic Address" required="true"></textarea>
 														</div>
 <div class="form-group">
 															<label for="fess">
-																 Doctor Cpnsultare
+																 Taxa de consultare
 															</label>
 					<input type="text" name="docfees" class="form-control"  placeholder="Enter Doctor Consultancy Fees" required="true">
 														</div>
 	
 <div class="form-group">
 									<label for="fess">
-																 Doctor Contact
+																 Doctor Tel
 															</label>
 					<input type="text" name="doccontact" class="form-control"  placeholder="Enter Doctor Contact no" required="true">
 														</div>

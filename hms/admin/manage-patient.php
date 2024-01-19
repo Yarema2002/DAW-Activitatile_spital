@@ -60,8 +60,8 @@ if(strlen($_SESSION['id']==0)) {
 <tr>
 <th class="center">#</th>
 <th>Patient Name</th>
-<th>Patient Contact Number</th>
-<th>Patient Sex </th>
+<th>Patient Contact Tel:</th>
+<th>Patient Gender </th>
 <th>Creation Date </th>
 <th>Updation Date </th>
 <th>Action</th>

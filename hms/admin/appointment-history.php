@@ -66,13 +66,13 @@ if(strlen($_SESSION['id']==0)) {
 										<thead>
 											<tr>
 												<th class="center">#</th>
-												<th class="hidden-xs">Doctor Name</th>
-												<th>Patient Name</th>
+												<th class="hidden-xs">Doctor Nume</th>
+												<th>Pacient Nume</th>
 												<th>Specializare</th>
 												<th>Consultare</th>
 												<th>Appointment Date </th>
 												<th>Appointment Creation Date  </th>
-												<th>Current Status</th>
+												<th>Sttus Curent</th>
 												<th>Action</th>
 												
 											</tr>

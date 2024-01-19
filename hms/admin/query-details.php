@@ -96,11 +96,11 @@ while($row=mysqli_fetch_array($sql))
 												<td><?php echo $row['email'];?></td>
 											</tr>
 											<tr>
-												<th>Contact nume</th>
+												<th>Contact Tel</th>
 												<td><?php echo $row['contactno'];?></td>
 											</tr>
 											<tr>
-												<th>Message</th>
+												<th>Mesaj</th>
 												<td><?php echo $row['message'];?></td>
 												</tr>
 
@@ -134,7 +134,7 @@ while($row=mysqli_fetch_array($sql))
 												</tr>
 
 <tr>
-												<th>Ultiam update</th>
+												<th>Ultima update</th>
 												<td><?php echo $row['LastupdationDate'];?></td>
 												</tr>
 											

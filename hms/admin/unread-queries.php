@@ -69,10 +69,10 @@ if(strlen($_SESSION['id']==0)) {
 												<th class="center">#</th>
 												<th>Name</th>
 												<th class="hidden-xs">Email</th>
-												<th>Contact No. </th>
-												<th>Message </th>
-												<th>Query Date</th>
-												<th>Action</th>
+												<th>Contact Tel </th>
+												<th>Mesaj </th>
+												<th>Interogare data</th>
+												<th>Actiune</th>
 												
 											</tr>
 										</thead>

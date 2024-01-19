@@ -64,7 +64,7 @@ if(strlen($_SESSION['id']==0)) {
 									<div class="panel panel-white no-radius text-center">
 										<div class="panel-body">
 											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-smile-o fa-stack-1x fa-inverse"></i> </span>
-											<h2 class="StepTitle">Manage Users</h2>
+											<h2 class="StepTitle">Gestionare Utilizatori</h2>
 											
 											<p class="links cl-effect-1">
 												<a href="manage-users.php">
@@ -72,7 +72,7 @@ if(strlen($_SESSION['id']==0)) {
 $num_rows = mysqli_num_rows($result);
 {
 ?>
-											Total Users :<?php echo htmlentities($num_rows);  } ?>		
+											Total Useri :<?php echo htmlentities($num_rows);  } ?>		
 												</a>
 											</p>
 										</div>
@@ -82,7 +82,7 @@ $num_rows = mysqli_num_rows($result);
 									<div class="panel panel-white no-radius text-center">
 										<div class="panel-body">
 											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
-											<h2 class="StepTitle">Manage Doctors</h2>
+											<h2 class="StepTitle">Gestioneaza Doctori</h2>
 										
 											<p class="cl-effect-1">
 												<a href="manage-doctors.php">
@@ -90,7 +90,7 @@ $num_rows = mysqli_num_rows($result);
 $num_rows1 = mysqli_num_rows($result1);
 {
 ?>
-											Total Doctors :<?php echo htmlentities($num_rows1);  } ?>		
+											Total Doctori :<?php echo htmlentities($num_rows1);  } ?>		
 												</a>
 												
 											</p>
@@ -122,7 +122,7 @@ $num_rows2 = mysqli_num_rows($sql);
 									<div class="panel panel-white no-radius text-center">
 										<div class="panel-body">
 											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-smile-o fa-stack-1x fa-inverse"></i> </span>
-											<h2 class="StepTitle">Manage Patienti</h2>
+											<h2 class="StepTitle">Gestioneaza Patienti</h2>
 											
 											<p class="links cl-effect-1">
 												<a href="manage-patient.php">
